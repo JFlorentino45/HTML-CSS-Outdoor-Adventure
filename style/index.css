@@ -1,8 +1,35 @@
 body {
-  background-color: #1f2039;
-  background-image: url("https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+}
+
+.background-tophalf {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"),
+    url("https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
+  background-attachment: fixed, fixed;
+  background-position: center, center;
   background-size: cover;
-  background-repeat: no-repeat;
+  height: 900px;
+}
+
+.background-tophalf::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-content {
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  color: #fff;
 }
 
 nav {
@@ -10,8 +37,9 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  color: #fff;
 }
 
-.main_logo {
+.main-logo {
   width: 200px;
 }
