@@ -16,8 +16,7 @@ nav {
   padding-left: 200px;
 }
 
-header,
-footer {
+header {
   padding: 20px 50px;
 }
 
@@ -25,16 +24,10 @@ nav a {
   margin-left: 30px;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .header-content {
   position: relative;
   z-index: 1;
+  overflow: auto;
 }
 
 .nav-items {
@@ -62,6 +55,7 @@ footer {
   color: #fff;
   text-align: center;
   justify-content: center;
+  padding: 50px 50px;
 }
 
 h1 {
@@ -78,6 +72,7 @@ h1 {
 }
 
 h2 {
+  font-size: 2em;
   padding-bottom: 20px;
 }
 
@@ -95,4 +90,36 @@ h3 {
   width: 50%;
   float: right;
   padding-left: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-logo {
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  header,
+  footer {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    margin: 50px 20px 50px 20px;
+  }
+
+  .nav-items {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 0;
+  }
 }
