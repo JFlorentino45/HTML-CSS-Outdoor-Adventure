@@ -25,7 +25,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 450px;
+  height: 550px;
 }
 
 .background-bottomhalf::before {
@@ -97,6 +97,18 @@
   padding-bottom: 50px;
   text-align: center;
   justify-content: center;
+}
+
+.left {
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+}
+
+.right {
+  width: 50%;
+  float: right;
+  padding-left: 30px;
 }
 
 .ski {
@@ -172,7 +184,7 @@
 }
 
 .left3 {
-  width: 20%;
+  width: 33.3%;
 }
 
 .row:after {
@@ -196,7 +208,7 @@
   width: 100%;
   height: 350px;
   object-fit: cover;
-  object-position: 25% 30%;
+  object-position: 45% 30%;
   margin-bottom: 30px;
   margin-left: 30px;
 }
@@ -219,4 +231,95 @@
   object-position: 25% 30%;
   margin-bottom: 30px;
   margin-left: 60px;
+}
+
+@media screen and (max-width: 960px) {
+  .home-box1 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quotation-mark {
+    display: none;
+  }
+
+  .background-tophalf {
+    height: 600px;
+    background-position: 60%, 1%;
+    padding-bottom: 50px;
+  }
+
+  .home-box3 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .left {
+    padding-right: 0;
+    width: 90%;
+    padding-bottom: 10px;
+  }
+
+  .right {
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .background-bottomhalf {
+    display: none;
+  }
+
+  .home-box4 {
+    padding-top: 10px;
+    flex-direction: column;
+  }
+
+  .row:after {
+    display: block;
+  }
+
+  .column {
+    float: none;
+  }
+
+  .left3 {
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left3 hr {
+    display: none;
+  }
+
+  .left3 p {
+    display: none;
+  }
+
+  .middle3 {
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .mountainbike {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .greenski {
+    margin-left: 0;
+    width: 90%;
+  }
+  .right3 {
+    display: none;
+  }
 }
