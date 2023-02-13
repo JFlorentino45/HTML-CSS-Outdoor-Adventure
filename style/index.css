@@ -288,7 +288,7 @@
   }
 
   .left3 {
-    width: 90%;
+    width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -303,7 +303,8 @@
   }
 
   .middle3 {
-    width: 90%;
+    padding-top: 10px;
+    width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
