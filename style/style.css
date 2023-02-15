@@ -50,6 +50,10 @@ a {
   color: #fff;
 }
 
+.hr1 {
+  margin: auto;
+}
+
 footer {
   background-color: black;
   color: #fff;
@@ -136,12 +140,10 @@ h3 {
     left: 0;
     height: 60px;
     bottom: 0;
-    padding-right: 10px;
     width: 100%;
     background-color: #fb2056;
     color: white;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }

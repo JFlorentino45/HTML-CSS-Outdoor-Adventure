@@ -42,6 +42,41 @@
 .hiker-img {
   border-radius: 10px;
   max-width: 100%;
+  min-width: 300px;
   transform: scaleX(-1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .bg-text {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-box1 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hiker-img {
+    min-width: none;
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .left {
+    padding-bottom: 30px;
+  }
+
+  .about-box2 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
